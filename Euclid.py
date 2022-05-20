@@ -13,7 +13,7 @@ while True:
     #preview
     print('\n', a[0], 'x +', b[0], 'y = 1')
 
-    if 0 < a[0] or 0 < b[0]:
+    if 0 < a[0] or 0 < b[0]: #Check suitability
         i = 0
         print('\n--- ユークリッドの互除法 ---')
 
@@ -39,7 +39,7 @@ while True:
             print('  1 =', P[i], '×', a[i-1], '+', P[i-1], '×', a[i])
             i -= 1
 
-        #特殊解出力
+        #Output
         print('\n')
         print('--- 特殊解 ---')
         print('  x0 =', P[i+1])
@@ -47,7 +47,7 @@ while True:
         print('  x =', P[i+1], '+', a[i+1], 't')
         print('  y =', P[i], '-', a[i], 't')
 
-        if str(input('\n>exit?(y or n): ')) == 'y':
+        if str(input('\n>exit?(y or n): ')) == 'y': #loop break
             break
     else:
         print('0むりです') #ERROR msg

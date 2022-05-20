@@ -1,7 +1,6 @@
 import streamlit as st
 
-#SOSU~
-#ほぼコピペなのであまり理解してない
+#SOSU~(ほぼコピペなのであまり理解してない)
 def page1():
     result1: str =''
 
