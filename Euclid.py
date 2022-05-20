@@ -11,7 +11,7 @@ while True:
     b.append(int(input('>[]y: ')))
 
     #preview
-    print('\n', a[0], 'x +', b[0], 'y = 1')
+    print(f'\n{a[0]}x + {b[0]}y = 1')
 
     if 0 < a[0] or 0 < b[0]: #Check suitability
         i = 0
@@ -28,7 +28,7 @@ while True:
             a.append(b[i])
             b.append(r[i])
             i += 1
-        print('\n  最大公約数 = ', b[i],'\n\n')
+        print(f'\n  最大公約数 = {b[i]}\n\n')
 
         #Hute-Ho-Te-Shiki
         print('--- 不定方程式 ---')
@@ -36,16 +36,15 @@ while True:
         P[i] = 1
         while i != 0:
             P[i-1] =  -int(((P[i] * a[i-1])-1) / a[i])
-            print('  1 =', P[i], '×', a[i-1], '+', P[i-1], '×', a[i])
+            print(f'  1 = {P[i]}× {a[i-1]} + {P[i-1]} × {a[i]}')
             i -= 1
 
         #Output
         print('\n')
         print('--- 特殊解 ---')
-        print('  x0 =', P[i+1])
-        print('  y0 =', P[i])
-        print('  x =', P[i+1], '+', a[i+1], 't')
-        print('  y =', P[i], '-', a[i], 't')
+        print(f'  x0 = {P[i+1]}\n  y0 = {P[i]}')
+        print(f'  x = {P[i+1]} + {a[i+1]}t')
+        print(f'  y = {P[i]} - {a[i]}t')
 
         if str(input('\n>exit?(y or n): ')) == 'y': #loop break
             break
