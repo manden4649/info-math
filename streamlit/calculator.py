@@ -95,8 +95,7 @@ if st.sidebar.button("素数判定"):
 
 if st.sidebar.button("ユークリッド計算機"):
     st.session_state.mode = 2
-else:
-    st.session_state.mode = 1
+
 #change mode
 if st.session_state.mode == 2:
     page2()
