@@ -6,10 +6,10 @@ while True:
     r: int = []
     q: int = []
 
-    print('[a]x ≡ 1 (mod [n])\n')
+    print('[a]x ≡ 1 (mod [N])\n')
     #input
     a.append(int(input('>[a]: ')))
-    b.append(int(input('>[n]: ')))
+    b.append(int(input('>[N]: ')))
 
     #preview
     print(f'\n{a[0]}x ≡ 1 (mod {b[0]})')
