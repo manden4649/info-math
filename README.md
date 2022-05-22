@@ -9,6 +9,6 @@
 - [ ] 連立方程式を解く
 - [ ] ~~Let's JavaScript!~~
 
-Streamlitというライブラリで簡易フロントエンドも作ってます。
+Streamlitというライブラリで簡易フロントエンドも作ってます。(最初エラー出ます)
 
 [👉Streamlit.io](https://share.streamlit.io/ryomanden/info-math/main/streamlit/calculator.py)
