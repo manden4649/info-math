@@ -2,16 +2,12 @@
 情報数学基礎にPythonで挑んでます。
 
 ## TODO
-- [x] ユークリッド互除法
-- [x] 一次不定方程式
+- [x] [ユークリッド互除法](https://github.com/ryomanden/info-math/blob/main/Euclid.py)
+- [x] [一次不定方程式](https://github.com/ryomanden/info-math/blob/main/GoDo.py)
 - [x] ax≡1 (mod N) を解く
 - [ ] 逆行列を求める 
 - [ ] 連立方程式を解く
 - [ ] ~~Let's JavaScript!~~
-
-[👉ユークリッドの互除法](https://github.com/ryomanden/info-math/blob/main/Euclid.py)
-
-[👉一次合同方程式](https://github.com/ryomanden/info-math/blob/main/GoDo.py)
 
 Streamlitというライブラリで簡易フロントエンドも作ってます。
 
