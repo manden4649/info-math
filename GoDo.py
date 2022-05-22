@@ -42,9 +42,8 @@ while True:
 
         #Output
         print('\n')
-        print(f'  x ≡ {P[i+1]}')
-        print(f'  y ≡ {P[i]}')
-        print(f'  y ≡ {P[i+1]} (mod {a[i+1]})')
+        print(f'  x ≡ {P[i+1]}\n  y ≡ {P[i]}')
+        print(f'  x ≡ {P[i+1]} (mod {a[i+1]})')
 
         if str(input('\n>exit?(y or n): ')) == 'y': #loop break
             break
