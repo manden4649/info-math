@@ -40,20 +40,36 @@ def page1():
 #Euclid
 def page2():
         result = ''
+        a = []
+        b = []
+        q = []
+        r = []
         st.header('ユークリッドの互除法')
         #input
-        a = (st.number_input(label='[a]x', value=0))
-        b = (st.number_input(label='[b]y', value=0))
+        a.append(st.number_input(label='[ ]x', value=0))
+        b.append(st.number_input(label='[ ]y', value=0))
         st.latex(str(int(a[0]))+'x+'+str(int(b[0]))+'y=1') #preview
+        i = 0
         if 0 < a[0] or 0 < b[0]:
-
-
             if st.button('計算する'):
                 col1,col2,col3 = st.columns(3)
                 i = 0
                 #calculation
                 with col1:
-                    euclid(a,b)
+                    st.subheader('ユークリッドの互除法')
+                    while True:
+                        q.append(a[i] // b[i])
+                        r.append(a[i] % b[i])
+                        st.latex(str(a[i]) + '=' + str(b[i]) + '×'\
+                        + str(q[i]) + '+' + str(r[i]))
+
+                        if r[i] == 0:
+                            break
+                        a.append(b[i])
+                        b.append(r[i])
+                        i += 1
+                    st.latex('最大公約数 = '+ str(int(b[i])))
+
                 with col2:
                     st.subheader('不定方程式')
                     P = [''] * (i+1)
@@ -72,11 +88,11 @@ def page2():
         else:
             st.error('0むりです') #ERROR msg
 
-#side-bar switch
-st.session_state.mode = st.radio('昨日洗濯',
-                                 ['素数判定', 'ユークリッド計算機'])
 
-#change
+#side-bar switch
+if st.sidebar.radio('Change mode', ['素数判定','ユークリッド計算機'])
+
+#change mode
 if st.session_state.mode == 'ユークリッド計算機':
     page2()
 else:
