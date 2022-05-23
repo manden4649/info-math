@@ -90,7 +90,7 @@ def page2():
 
 
 #side-bar switch
-if st.sidebar.radio('Change mode', ['素数判定','ユークリッド計算機'])
+st.session_state.mode = st.sidebar.radio('Which do you like?', ['素数判定', 'ユークリッド計算機'])
 
 #change mode
 if st.session_state.mode == 'ユークリッド計算機':
