@@ -36,7 +36,7 @@ while True:
         P[i] = 1
         while i != 0:
             P[i-1] =  -int(((P[i] * a[i-1])-1) / a[i])
-            print(f'  1 = {P[i]}× {a[i-1]} + {P[i-1]} × {a[i]}')
+            print(f'  1 = {P[i]} × {a[i-1]} + {P[i-1]} × {a[i]}')
             i -= 1
 
         #Output
