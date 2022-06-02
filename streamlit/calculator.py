@@ -11,7 +11,7 @@ def page1():
         if st.button('計算する'):
         
             def bunkai(num):
-               divisors = {}
+               divisors = { }
                for prime in range(2, num + 1):
                    expon = 0
                    while (num % prime) == 0:
