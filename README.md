@@ -5,7 +5,7 @@
 - [x] ユークリッド互除法
 - [x] [一次不定方程式](https://github.com/ryomanden/info-math/blob/main/Euclid.py)
 - [x] [ax≡1 (mod N) を解く](https://github.com/ryomanden/info-math/blob/main/GoDo.py)
-- [ ] 逆行列を求める 
+- [x] 逆行列を求める 
 - [ ] 連立方程式を解く
 - [ ] ~~Let's JavaScript!~~
 
